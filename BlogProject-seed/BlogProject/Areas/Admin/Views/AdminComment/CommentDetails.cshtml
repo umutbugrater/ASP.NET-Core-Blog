@@ -1,0 +1,46 @@
+﻿@model Comment
+
+@{
+    ViewData["Title"] = "CommentDetails";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Yorum Detayı</h1>
+<div class="form-group">
+    <label for="title">Yorum Başlığı</label>
+    <input type="text" class="form-control" value="@Model.CommentTitle" readonly>
+</div>
+<div class="form-group">
+    <label for="message">Yorum İçeriği</label>
+    <textarea class="form-control" rows="13" column="3" readonly>@Model.CommentContent </textarea>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="form-group" style="text-align:center;font-weight:bold">
+            <label for="title">Yorum Tarihi</label>
+            <input type="text" style="text-align:center" class=" form-control" readonly value="@Model.CommentDate.ToString("dd-MMM-yyyy")">
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group" style="text-align:center;font-weight:bold">
+            <label for="title">Yorum Skoru</label>
+            <input type="text" style="text-align:center" class=" form-control" readonly value="@Model.BlogScore">
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group" style="text-align:center;font-weight:bold">
+            <label for="title">Blog Başlığı</label>
+            <input type="text" style="text-align:center" class=" form-control" readonly value="@Model.Blog.BlogTitle">
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group" style="text-align:center;font-weight:bold">
+            <label for="title">Yazarın Adı Soyadı</label>
+            <input type="text" style="text-align:center" class=" form-control" readonly value="@Model.AppUser.NameSurname">
+        </div>
+    </div>
+
+</div>

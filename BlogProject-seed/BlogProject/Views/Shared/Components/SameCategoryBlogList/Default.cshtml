@@ -1,0 +1,33 @@
+﻿@model List<Blog>
+
+
+<div class="sidebar-widget">
+    <h2 class="sw-title " style="color:#ff6f61">Bu Kategoriye Ait Diğer Yazılar</h2>
+    <div class="news-list">
+        @if (Model.Count > 0)
+        {
+            @foreach (var item in Model)
+            {
+                <div class="nl-item">
+                    <div class="nl-img">
+                        <img src="~/BlogImages/@item.BlogImage" style="width:110px;height:85px;" />
+                    </div>
+                    <div class="nl-title">
+                        <a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id="@item.BlogID">@item.BlogTitle</a>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="nl-item">
+                <div class="nl-title">
+                    <a asp-controller="Blog" asp-action="BlogAdd" style="font-weight:bold;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Bu yazıya ait başka yazı bulunmamaktadır. Yeni blog yazısı oluşturmak için tıklayınız</a>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
+

@@ -1,0 +1,27 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "BlogEdit";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Blog Güncelleme</h1>
+
+<form asp-action="BlogEdit" asp-controller="Blog" method="post" enctype="multipart/form-data">
+    @Html.HiddenFor(x=>x.BlogID , new {@class="form-control"} )
+    <br />
+    <label class="control-label">Blok Başlığı</label>
+    @Html.TextBoxFor(x=>x.BlogTitle, new {@class = "form-control"})
+    <br />
+
+    <label class="control-label"> Kategori Türü</label>
+    @Html.DropDownListFor(x=>x.CategoryID,(List<SelectListItem>)ViewBag.cat, new {@class = "form-control"})
+    <br />
+
+    <label class="control-label">Blog Görseli</label>
+    <input type="file" name="img" class="form-control" />
+    <br />
+    <label class="control-label"> Blok İçeriği</label>
+    @Html.TextAreaFor(x=>x.BlogContent,10,3, new {@class = "form-control"})
+    <br />
+    <button type="submit" class="btn-outline-success btn-lg">Güncelle</button>
+</form>

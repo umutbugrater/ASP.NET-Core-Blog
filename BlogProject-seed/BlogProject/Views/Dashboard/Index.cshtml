@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Custom Theme files -->
+    <!-- Custom Theme files -->
+    <script src="~/web2/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="~/web2/css/font-awesome.css">
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Metro Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--webfont-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <link href="~/web2/css/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+    <script src="~/web2/js/easyResponsiveTabs.js" type="text/javascript"></script>
+
+    <script src="~/web2/js/main.js"></script> <!-- Resource jQuery -->
+    <!-- chart -->
+    <script src="~/web2/js/Chart1.js"></script>
+    <!-- //chart -->
+</head>
+<body>
+    <div class="list_of_members" style="padding:50px;">
+        <div class="sales" style="background-color:#f39c12;width:30%;margin-right:2%;padding:1.8em 1.5em;float:left;cursor:pointer">
+            <div >
+                <h3 style="text-align:center;font-size:2.6em;font-weight:500;letter-spacing:1px;color:#fff;">@ViewBag.blog</h3>
+                <p style="float:left;font-size:1.3em;font-weight:300;color:#fff;">Toplam Blog Sayısı</p>
+            </div>
+        </div>
+        <div class="sales" style="background-color:#2ecc71;width:30%;margin-right:2%;padding:1.8em 1.5em;float:left;cursor:pointer">
+            <div>
+                <h3 style="text-align:center;font-size:2.6em;font-weight:500;letter-spacing:1px;color:#fff;">@ViewBag.userBlog</h3>
+                <p style="float:left;font-size:1.3em;font-weight:300;color:#fff;">Sizin Blog Sayınız</p>
+            </div>
+        </div>
+        <div class="sales" style="background-color:#c0392b;width:30%;margin-right:2%;padding:1.8em 1.5em;float:left;cursor:pointer">
+            <div>
+                <h3 style="text-align:center;font-size:2.6em;font-weight:500;letter-spacing:1px;color:#fff;">@ViewBag.category</h3>
+                <p style="float:left;font-size:1.3em;font-weight:300;color:#fff;">Toplam Kategori Sayısı</p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="clearfix"></div>
+
+</body>
+</html>
+
+@await Component.InvokeAsync("BlogListDashboard")
+
+@await Component.InvokeAsync("WriterAboutOnDashboard")
+

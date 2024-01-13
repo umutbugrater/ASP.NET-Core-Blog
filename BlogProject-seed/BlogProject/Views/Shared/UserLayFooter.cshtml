@@ -1,0 +1,38 @@
+﻿<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                    <h3 class="title" style="color:#ff6f61">Bize Ulaşmak İçin</h3>
+                    <div class="contact-info">
+                        <p><i class="fa fa-map-marker"></i>Ankara, Turkey</p>
+                        <p><i class="fa fa-envelope"></i>umutb@example.com</p>
+                        <p><i class="fa fa-phone"></i>+123-456-7890</p>s
+                        <div class="social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/umut-bu%C4%9Fra-ter-600809233/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/umutbugra.ter/"><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @await Component.InvokeAsync("BlogLast3Post")
+
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                    <h3 class="title" style="color:#ff6f61">Mail Bültenine Abone Olun</h3>
+                        <p>
+                           Yeni eklenen bloglardan ve haberlerden, en erken haberdar olmak için e-posta adresizi giriniz.
+                        </p>
+                        <form method="post" asp-action="SubscribeNewsLetter" asp-controller="NewsLetter" class="py-3">
+                            <input required class="form-control" name="Mail" type="email" placeholder="Email adresinizi giriniz."> 
+                            <button class="btn">Abone Ol</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

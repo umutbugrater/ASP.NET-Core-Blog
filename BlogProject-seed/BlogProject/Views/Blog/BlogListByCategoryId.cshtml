@@ -1,0 +1,85 @@
+﻿@model List<Blog>
+@{
+    ViewData["Title"] = "BlogListByCategoryId";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<link href="~/userlayout/css/fontawesome-all.css" rel="stylesheet" />
+<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+      rel="stylesheet">
+<link href="~/userlayout/css/style2.css" rel="stylesheet" type="text/css" />
+
+<section class="main-content-w3layouts-agileits">
+    <div class="container">
+        <h3 class="tittle" style="text-align:center;color:#ff6f61">@ViewBag.catName Kategorisine Ait Blog Yazıları</h3>
+        <div class="inner-sec">
+            <!--left-->
+            <div class="left-blog-info-w3layouts-agileits text-left">
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+
+                        <div class="col-lg-4 card">
+                            <a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id="@item.BlogID">
+                                <img src="~/BlogImages/@item.BlogImage" class="card-img-top img-fluid" style="height:280px;width:350px;margin:5px" alt="">
+                            </a>
+                            <div class="card-body">
+                                <ul class="blog-icons my-4">
+                                    <li>
+                                        <a>
+                                            <i class="far fa-calendar-alt"></i> @(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))
+                                        </a>
+                                    </li>
+                                    <li class="mx-3">
+                                        <a>
+                                            <i class="far fa-comment"></i>
+
+                                            @{
+                                                for (int i = 0; i < ViewBag.blogsCommentCount.Length; i++)
+                                                {
+                                                    if (item.BlogID == i)
+                                                    {
+                                                        @Html.Raw(ViewBag.blogsCommentCount[i])
+                                                    }
+                                                }
+
+                                            }
+                                        </a>
+                                    </li>
+                                    <li class="ml-4">
+                                        <a>
+                                            <i class="fas fa-star"></i>
+                                            @{
+                                                for (int i = 0; i < ViewBag.blogsSumScore.Length; i++)
+                                                {
+                                                    if (item.BlogID == i)
+                                                    {
+                                                        var score = ViewBag.blogsCommentCount[i] > 0 ?
+                                                        Math.Round((double)ViewBag.blogsSumScore[i] / ViewBag.blogsCommentCount[i], 1) : 0;
+                                                        @Html.Raw(score)
+                                                    }
+                                                }
+                                            }
+
+
+
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <h5 class="card-title">
+                                    <a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id="@item.BlogID" >@item.BlogTitle</a>
+                                </h5>                                          <!-- 0. indexten başlayıp, 130. indexe yakın olan boşluğun indexine kadar alacak(son kelimeyi tam almak için) -->
+                                <p class="card-text mb-3">@item.BlogContent.Substring(0,item.BlogContent.Substring(0,130).LastIndexOf(" ")) ... </p>
+                                <a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id="@item.BlogID" class="btn btn-primary read-m" style="background-color:#000;color:#ff6f61;border:1px solid #ff6f61">Devamını Oku</a>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+                <!--//left-->
+            </div>
+        </div>
+
+    </div>
+</section>

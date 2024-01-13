@@ -1,0 +1,32 @@
+﻿@model List<Blog>
+
+<div class="col-lg-6 col-md-6">
+    <div class="footer-widget">
+        <h3 class="title text-center" style="color:#ff6f61">Son 3 Blog</h3>
+        @foreach (var item in Model.Take(3))
+        {
+
+            <div class="blog-grids row mb-3">
+                <div class="col-md-5 blog-grid-left">
+                    <a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id="@item.BlogID">
+                        <img src="~/BlogImages/@item.BlogImage" class="img-fluid" style="width:200px;height:125px" alt="">
+                    </a>
+                </div>
+                <div class="col-md-7 blog-grid-right">
+
+                    <h5 class="pt-3">
+                        <a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id="@item.BlogID"> @item.BlogTitle </a>
+                    </h5>
+                    <div class="sub-meta">
+                        <span>
+                            @* <p class="far fa-clock"> @(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))</p> *@
+                            <p class="far fa-clock pt-4"> @(((DateTime)item.BlogCreateDate).ToString())</p>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        }
+
+    </div>
+</div>

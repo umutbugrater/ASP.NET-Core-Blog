@@ -1,0 +1,63 @@
+﻿@using X.PagedList;
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common;
+@model IPagedList<AppUser>
+
+@{
+    ViewData["Title"] = "UserRoleList";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+<link href="~/inspinia-gh-pages/css/pagedd.css" rel="stylesheet" />
+
+<h1>Kullanıcı Rol Listesi</h1>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-content">
+                    <table class="table table-hover">
+                        <tr>
+                            <th>Kullanıcı Ad Soyad</th>
+                            <th>Kullanıcı Eposta</th>
+                            <th>Rol Ata</th>
+                        </tr>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.NameSurname</td>
+                                <td>@item.UserName</td>
+                                <td> <a href="/Admin/AdminRol/AssignRole/@item.Id" class="btn btn-outline-warning">Rol Ata</a></td>
+                            </tr>
+                        }
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@{
+    var durum = "";
+    if (Model.Count() < 10)
+    {
+        durum = "visibility:hidden";
+    }
+    else
+    {
+        durum = "visibility:visible";
+    }
+}
+<div class="pagination" style="justify-content:center;@durum">
+
+    @Html.PagedListPager(Model, page => Url.Action("UserRoleList", new { page = page }),
+    new PagedListRenderOptions
+    {
+    LinkToPreviousPageFormat = "< Önceki",
+    LinkToNextPageFormat = "Sonraki >",
+    LiElementClasses = new string[] { "page-item"},
+    PageClasses = new string[] {"page-link"}
+    })
+</div>
+<a href="/Admin/AdminRol/Index" class="btn btn-primary">Rol Listesine Dön</a>
+

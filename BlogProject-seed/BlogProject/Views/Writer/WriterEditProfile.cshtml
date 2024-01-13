@@ -1,0 +1,126 @@
+﻿@model UserUpdateViewModel
+
+@{
+    ViewData["Title"] = "WriterEditProfile";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<body class="">
+
+    <div class="content">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="title">Profil Düzenleme</h5>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" asp-action="WriterEditProfile" asp-controller="Writer" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-md-12 pr-md-1">
+                                    <div class="form-group">
+                                        <label>Ad Soyad</label>
+                                        <input type="text" class="form-control" asp-for="@Model.namesurname" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 pr-md-1">
+                                    <div class="form-group">
+                                        <label>İş Ünvanı</label>
+                                        <input type="text" class="form-control" asp-for="@Model.jobtitle">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pl-md-1">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <input type="email" class="form-control" asp-for="@Model.email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 pr-md-1">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="disableRow[]" asp-for="@Model.ChangePassword">
+                                        <label>Şifremi Değiştirmek İstemiyorum</label> <br />
+                                        <label for="exampleInputEmail3">Yeni Şifreniz</label>
+                                        <input type="text" asp-for="@Model.password" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 pr-md-1">
+                                    <div class="form-check">
+                                        <label for="exampleInputEmail3">Resim Değiştirme</label>
+                                        <input type="file" name="img" class="form-control" />
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Hakkımda</label>
+                                        <textarea rows="5" cols="80" class="form-control" asp-for="@Model.about"> </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-fill btn-primary">Güncelle</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-user">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <div class="author">
+                                <div class="block block-one"></div>
+                                <div class="block block-two"></div>
+                                <div class="block block-three"></div>
+                                <div class="block block-four"></div>
+                                <img class="avatar" src="~/UserImages/@ViewBag.image" alt="...">
+                                <h4 class="title">@Model.namesurname</h4>
+                                <h5> @Model.jobtitle </h5>
+                            </div>
+                        </p>
+                        <div class="card-description">
+                            @Model.about
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="button-container">
+                            <button href="javascript:void(0)" class="btn btn-icon btn-round btn-facebook">
+                                <i class="fab fa-facebook"></i>
+                            </button>
+                            <button href="javascript:void(0)" class="btn btn-icon btn-round btn-twitter">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button href="javascript:void(0)" class="btn btn-icon btn-round btn-google">
+                                <i class="fab fa-google-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    $("input:checkbox[id^='disableRow']").prop("checked", false);
+
+    $("input:checkbox[id^='disableRow']").on("change", function () {
+        $(this).closest("div").find("input:text, select").prop("disabled", this.checked);
+    });
+</script>

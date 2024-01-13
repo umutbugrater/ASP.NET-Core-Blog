@@ -1,0 +1,36 @@
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll

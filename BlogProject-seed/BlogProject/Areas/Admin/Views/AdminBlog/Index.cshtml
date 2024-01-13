@@ -1,0 +1,91 @@
+﻿@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+@model IPagedList<Blog>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="~/inspinia-gh-pages/css/pagedd.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | E-commerce</title>
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+
+                <div class="col-md-3">
+                    <div class="ibox">
+                        <div class="ibox-content product-box">
+
+                            <div>
+                                <img src="~/BlogImages/@item.BlogImage" class="card-img-top img-fluid" style="height:250px;" alt="Resim Yüklenemedi" />
+                            </div>
+                            <div class="product-desc">
+                                <span class="product-price">
+                                    @(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))
+                                </span>
+                                <small class="text-muted">@item.Category.CategoryName</small>
+                                <a href="#" class="product-name"> @item.BlogTitle</a>
+
+
+
+                                <div class="small m-t-xs">
+                                    @item.BlogContent.Substring(0,item.BlogContent.Substring(0,100).LastIndexOf(" ")) ...
+                                </div>
+                                <div class="m-t text-righ">
+
+                                    <a href="/Blog/BlogReadAll/@item.BlogID" class="btn btn-xs btn-outline btn-primary"> Detaylar <i class="fa fa-long-arrow-right"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+           
+        </div>
+
+    </div>
+    @{
+        var durum = "";
+        if (Model.Count() < 12)
+        {
+            durum = "visibility:hidden";
+        }
+        else
+        {
+            durum = "visibility:visible";
+        }
+    }
+    <div class="pagination" style="justify-content:center;@durum">
+
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }),
+        new PagedListRenderOptions
+        {
+        LinkToPreviousPageFormat = "< Önceki",
+        LinkToNextPageFormat = "Sonraki >",
+        LiElementClasses = new string[] { "page-item"},
+        PageClasses = new string[] {"page-link"}
+        })
+    </div>
+</body>
+
+</html>
+
+

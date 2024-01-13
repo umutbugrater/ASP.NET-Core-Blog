@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Excel Dosyalar</h1>
+
+<a asp-area="Admin" asp-controller="AdminDynamicRapor" asp-action="DynamicExcelBlogList" class="btn btn-lg btn-outline-info my-4" style="display:block">Blog Listesi İndir</a>
+<a asp-area="Admin" asp-controller="AdminDynamicRapor" asp-action="DynamicExcelUserList" class="btn btn-lg btn-outline-primary" style="display:block">Yazar(Kullanıcı) Listesi İndir</a>
+

@@ -1,0 +1,21 @@
+﻿@model List<Category>
+
+<div class="sidebar-widget" style="margin-top:100px" >
+    <h2 class="sw-title" style="color:#ff6f61"> Kategoriler </h2>
+    <div class="category">
+        <ul>
+            @foreach (var cat in Model.OrderBy(x=>x.CategoryName))
+            {
+                for (int i = 0; i < ViewBag.categoryCount.Length; i++)
+                {
+                    if (i == cat.CategoryID)
+                    {
+                        <li><a href="/Blog/BlogListByCategoryId/@i"> @cat.CategoryName </a><span>(@ViewBag.categoryCount[i])</span></li>
+                    }
+
+                }
+
+            }
+        </ul>
+    </div>
+</div>

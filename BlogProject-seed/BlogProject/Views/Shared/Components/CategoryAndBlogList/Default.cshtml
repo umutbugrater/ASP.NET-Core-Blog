@@ -1,0 +1,63 @@
+﻿@model List<Blog>
+
+<link href="~/userlayout/css/slider.css" rel="stylesheet" />
+<div class="cat-news">
+    <div class="container">
+        <div class="row">
+            @for (int i = 0; i < ViewBag.categoriesCount; i++)
+            {
+                <div class="col-md-6">
+                    <h2 style="color:#ff6f61">@ViewBag.categories[i]</h2>
+                    <div class="row cn-slider">
+                        @foreach (var item in Model)
+                        {
+                            @if (item.Category.CategoryName == ViewBag.categories[i])
+                            {
+                                var durum = "";
+                                var son =0;
+                                if (ViewBag.catCount[i] == 1 )
+                                {
+                                    durum = "height:175px;width:540px;";
+                                    son = 20;
+                                }
+                                else
+                                {
+                                    durum = "height:175px;width:255px";
+                                    son = 20;
+                                }
+                                <div class="col-md-6" >
+                                    <div class="cn-img" style=@durum>
+                                        <img src="~/BlogImages/@item.BlogImage"  />
+                                        <div class="cn-title" style="text-align:center">
+                                            <a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id="@item.BlogID">@item.BlogTitle.Substring(0,son) ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            }
+
+            @for (int i = 0; i < ViewBag.bosKategorilerCount; i++)
+            {
+                <div class="col-md-6">
+                    <h2 style="color:#ff6f61">@ViewBag.bosKategoriler[i]</h2>
+                        <div class="col-md-6">
+                            <div class="cn-img" style="height:175px;width:510px;float:left">    
+                                <img src="~/BlogImages/nodata.jpg" />
+                                <div class="cn-title" style="text-align:center;display:block" >
+                                    <h5 style="padding-top:55px;color:#ff6f61;font-weight:bold">Bu Kategoriye Ait Blog Yazısı Bulunmamıştır.</h5>
+                                    <a asp-controller="Blog" asp-action="BlogAdd">İlk Blogu Sen Yazmak İster Misin??</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            }
+
+        </div>
+
+
+    </div>
+</div>
+

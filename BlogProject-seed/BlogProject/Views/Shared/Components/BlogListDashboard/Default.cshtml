@@ -1,0 +1,41 @@
+﻿@model List<Blog>
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card ">
+                <div class="card-header">
+                    <h4 class="card-title"> SON 10 BLOG </h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table tablesorter " id="">
+                            <thead class=" text-primary">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Başlık</th>
+                                    <th>Kategori</th>
+                                    <th>Tarih</th>
+                                    <th>Detaylar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Take(10))
+                                {
+                                    <tr>
+                                        <td> <img src="~/BlogImages/@item.BlogImage" style="width:50px;height:50px;border-radius:50%;" /> </td>
+                                        <td>@item.BlogTitle</td>
+                                        <td>@item.Category.CategoryName</td>
+                                        <td>@item.BlogCreateDate.ToString("dd-MMM-yyyy")</td>
+                                        <td> <a href="/Blog/BlogReadAll/@item.BlogID" class="btn btn-dark">Detaylar</a> </td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

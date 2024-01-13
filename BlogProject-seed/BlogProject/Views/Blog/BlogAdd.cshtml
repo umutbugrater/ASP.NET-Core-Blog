@@ -1,0 +1,43 @@
+﻿@model EntityLayer.Concrete.Blog
+
+@{
+    ViewData["Title"] = "BlogAdd";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+<h1>Yeni Blog Girişi</h1>
+<br />
+<div class="row">
+
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-10">
+
+        <form asp-action="BlogAdd" asp-controller="Blog" method="post" enctype="multipart/form-data">
+            
+            @Html.Label("Blog Başlığı")
+            @Html.TextBoxFor(x=>x.BlogTitle, new {@class="form-control"})
+            @Html.ValidationMessageFor(x=>x.BlogTitle,"",new {@class ="text-danger"})
+            <br />
+            @Html.Label("Blog Görseli")
+            <input class="form-control" type="file" name="img" />
+            @Html.ValidationMessageFor(x=>x.BlogImage,"",new {@class ="text-danger"})
+
+            <br />
+            @Html.Label("Kategori")
+            @Html.DropDownListFor(x=>x.CategoryID,(List<SelectListItem>)ViewBag.CategoryValues, new {@class = "form-control"})
+
+            <br />
+            @Html.Label("Blog İçeriği")
+            @Html.TextAreaFor(x=>x.BlogContent,15,10, new {@class="form-control"})
+            @Html.ValidationMessageFor(x=>x.BlogContent,"",new {@class ="text-danger"})
+            <br />
+            <button class="btn btn-info">Yazıyı Kaydet</button>
+        </form>
+        <div>
+            <a asp-action="BlogListByWriter" class="btn btn-outline-danger">Geri Dön</a>
+        </div>
+
+    </div>
+</div>
+<div class="col-md-1">
+</div>

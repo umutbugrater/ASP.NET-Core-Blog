@@ -1,0 +1,51 @@
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll

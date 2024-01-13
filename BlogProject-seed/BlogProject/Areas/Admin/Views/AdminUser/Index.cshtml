@@ -1,0 +1,91 @@
+﻿@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+@model IPagedList<AppUser>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="~/inspinia-gh-pages/css/pagedd.css" rel="stylesheet" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>~~ Yazarlar ~~</title>
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-4">
+                        <div class="contact-box">
+                            <div class="row" >
+                                <div class="col-4 ">
+                                    <div class="text-center">
+                                        <img alt="image" class="rounded-circle m-t-xs img-fluid" style="height:90px;width:90px" src="~/UserImages/@item.ImageUrl">
+                                        <div class="m-t-xs font-bold">@item.JobTitle</div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <h3><strong>@item.NameSurname</strong></h3>
+                                    <a href="mailto:@item.Email"><i class="fa fa-envelope-o"> -></i>  @item.Email </a>
+                                    <address>
+                                        <strong>Hakkında</strong><br>
+                                        @if (item.About != null)
+                                        {
+                                            <p> @item.About.Substring(0,item.About.Substring(0,200).LastIndexOf(" ")) ... </p>
+                                        }
+                                        else
+                                        {
+                                            <p>Yazar Bilgisi Bulunmamaktadir... </p>
+
+                                        }
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+    @{
+        var durum = "";
+        if (Model.Count() < 9)
+        {
+            durum = "visibility:hidden";
+        }
+        else
+        {
+            durum = "visibility:visible";
+        }
+    }
+    <div class="pagination" style="justify-content:center;@durum">
+
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }),
+        new PagedListRenderOptions
+        {
+        LinkToPreviousPageFormat = "< Önceki",
+        LinkToNextPageFormat = "Sonraki >",
+        LiElementClasses = new string[] { "page-item"},
+        PageClasses = new string[] {"page-link"}
+        })
+    </div>
+</body>
+
+</html>
+
+

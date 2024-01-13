@@ -1,0 +1,15 @@
+﻿@model List<Blog>
+
+
+<div class="col-lg-3" >
+    <div class="mn-list">
+        <h2 style="color:#ff6f61">En Son Eklenenler</h2>
+        <ul>
+            @foreach (var item in Model.OrderByDescending(x => x.BlogCreateDate).Take(10))
+            {
+                <li><a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id="@item.BlogID">@item.BlogTitle</a></li>
+            }
+
+        </ul>
+    </div>
+</div>

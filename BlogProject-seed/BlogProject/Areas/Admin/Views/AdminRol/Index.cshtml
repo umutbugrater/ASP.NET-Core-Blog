@@ -1,0 +1,86 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common;
+@model IPagedList<AppRole>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<link href="~/inspinia-gh-pages/css/pagedd.css" rel="stylesheet" />
+
+<body>
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5> Roller  </h5>
+                    </div>
+                    <div class="ibox-content">
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Başlık</th>
+                                    <th>Sil</th>
+                                    <th>Düzenle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <th>@item.Id</th>
+                                        <td>@item.Name</td>
+                                        <td> <a asp-action="DeleteRole" asp-route-id="@item.Id" onclick="return confirm('@item.Name.ToUpper() Rolünü silmek istediğinize Emin misiniz');" class="btn btn-outline-danger">Sil</a></td>
+                                        <td> <a asp-action="UpdateRole" asp-route-id="@item.Id" class="btn btn-outline-success">Güncelle</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <a asp-action="AddRole" class="btn btn-outline-primary">Yeni Rol Ekle</a>
+                        <a href="/Admin/AdminRol/UserRoleList/" class="btn btn-outline-info">Kullanıcı Rol Listesi</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @{
+        var durum = "";
+        if (Model.Count() < 7)
+        {
+            durum = "visibility:hidden";
+        }
+        else
+        {
+            durum = "visibility:visible";
+        }
+    }
+    <div class="pagination" style="justify-content:center;@durum">
+
+        @*  @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }), *@
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }),
+        new PagedListRenderOptions
+        {
+        LinkToPreviousPageFormat = "< Önceki",
+        LinkToNextPageFormat = "Sonraki >",
+        LiElementClasses = new string[] { "page-item"},
+        PageClasses = new string[] {"page-link"}
+        })
+    </div>
+
+
+</body>
+
+</html>
+

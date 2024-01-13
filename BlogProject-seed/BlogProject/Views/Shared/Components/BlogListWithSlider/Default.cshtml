@@ -1,0 +1,41 @@
+﻿@model List<Blog>
+
+<!-- Top News Start-->
+<div class="top-news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 tn-left">
+                <div class="row tn-slider">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-md-6">
+                            <div class="tn-img">
+                                <img src="~/BlogImages/@item.BlogImage" style="height:425px;" />
+                                <div class="tn-title">
+                                    <a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id="@item.BlogID">@item.BlogTitle </a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+            <div class="col-md-6 tn-right">
+                <div class="row">
+                    @foreach (var item in Model.OrderByDescending(x => x.BlogCreateDate).Take(4))
+                    {
+                        <div class="col-md-6">
+                            <div class="tn-img">
+                                <img src="~/BlogImages/@item.BlogImage" style="width:270px;height:213px;" />
+                                <div class="tn-title">
+                                    <a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id="@item.BlogID">@item.BlogTitle.Substring(0,19)...</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

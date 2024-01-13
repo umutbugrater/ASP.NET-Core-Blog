@@ -1,0 +1,51 @@
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CopyComplete
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject - Kopya\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CopyComplete
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CopyComplete
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+C:\Users\umutb\source\repos\MCSD\BEN\BlogProject-seed\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll

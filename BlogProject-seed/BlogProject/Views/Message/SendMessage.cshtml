@@ -1,0 +1,28 @@
+﻿@model Message
+
+@{
+    ViewData["Title"] = "SendMessage";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Mesaj Gönder</h1>
+
+<form method="post" asp-controller="Message" asp-action="SendMessage">
+
+    @Html.Label("Mesajı Alacak Kayıtlı Eposta")
+    @Html.DropDownListFor(x=>x.ReceiverID,(List<SelectListItem>)ViewBag.receivers,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.ReceiverID,"",new {@class="text-danger"})
+    <br />
+
+    @Html.Label("Mesaj Konusu")
+    @Html.TextBoxFor(x=>x.MessageSubject,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.MessageSubject,"",new {@class="text-danger"})
+    <br />
+
+    @Html.Label("Mesaj İçeriği")
+    @Html.TextAreaFor(x=>x.MessageDetails,15,3,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.MessageDetails,"",new {@class="text-danger"})
+    <br />
+
+    <button type="submit" class="btn btn-lg btn-primary">Mesajı Gönder</button>
+</form>

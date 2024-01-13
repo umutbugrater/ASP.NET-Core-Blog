@@ -1,0 +1,42 @@
+﻿<link href="~/css/yorumm.css" rel="stylesheet" />
+
+<div class="comment-top">
+    <h5 style="color:#ff6f61">Bir Yorum Yapın</h5>
+    <div class="comment-bottom">
+        <form asp-action="CommentAddByBlog" asp-controller="Comment" asp-route-id="@ViewBag.i" method="post">
+            @* <input class="form-control" type="text" name="CommentUserName" placeholder="Adınız Soyadınız" required=""> *@
+            <input class="form-control" type="text" name="CommentTitle" placeholder="Konu" required="" style="border:2px dotted #ff6f61">
+
+            <textarea class="form-control" name="CommentContent" placeholder="Yorumunuz..." required="" style="border:2px dotted #ff6f61"></textarea>
+
+            <div class="container d-flex justify-content-center mt-5">
+
+                <div class="card text-center mb-5">
+
+                    <div class="rate bg-success py-3 text-white" >
+
+                        <h6 class="mb-0" style="color:white">Okuduğunuz bu blok yazısına puan verin</h6>
+
+                        <div class="rating">
+                            <input type="radio" name="BlogScore" value="10" id="10"><label for="10">☆</label>
+                            <input type="radio" name="BlogScore" value="9" id="9"><label for="9">☆</label>
+                            <input type="radio" name="BlogScore" value="8" id="8"><label for="8">☆</label>
+                            <input type="radio" name="BlogScore" value="7" id="7"><label for="7">☆</label>
+                            <input type="radio" name="BlogScore" value="6" id="6"><label for="6">☆</label>
+                            <input type="radio" name="BlogScore" value="5" id="5"><label for="5">☆</label>
+                            <input type="radio" name="BlogScore" value="4" id="4"><label for="4">☆</label>
+                            <input type="radio" name="BlogScore" value="3" id="3"><label for="3">☆</label>
+                            <input type="radio" name="BlogScore" value="2" id="2"><label for="2">☆</label>
+                            <input type="radio" name="BlogScore" value="1" id="1"><label for="1">☆</label>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <button type="submit" class="btn btn-primary submit">Yorum Yap</button>
+        </form>
+    </div>
+</div>

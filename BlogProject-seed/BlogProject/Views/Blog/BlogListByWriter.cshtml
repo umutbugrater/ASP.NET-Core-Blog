@@ -1,0 +1,48 @@
+﻿@model List<Blog>
+
+@{
+    ViewData["Title"] = "BlogListByWriter";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Yazarın Blogları</h1>
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover tablesorter">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Blog Başlığı</th>
+                                    <th>Oluşturma Tarihi</th>
+                                    <th>Kategori Adı</th>
+                                    <th style="width:400px;">Resim</th>
+                                    <th style="width:150px;">Düzenle</t>
+                                    <th style="width:150px;">Sil</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <th>@item.BlogID</th>
+                                        <td>@item.BlogTitle</td>
+                                        <td>@item.BlogCreateDate.ToString("dd-MMM-yyyy")</td>
+                                        <td>@item.Category.CategoryName</td>
+                                        <td> <img src="~/BlogImages/@item.BlogImage" style="height:100px;width:250px;" class="img-fluid"> </td>
+                                        <td> <a href="/Blog/BlogEdit/@item.BlogID" class="btn btn-success btn-lg "> Düzenle </a> </td>
+                                        <td> <a href="/Blog/BlogDelete/@item.BlogID" class="btn btn-block btn-lg btn-danger" /> Sil</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a asp-action="BlogAdd" asp-controller="Blog" class="btn btn-warning btn-lg">Yeni Blok Ekle</a>

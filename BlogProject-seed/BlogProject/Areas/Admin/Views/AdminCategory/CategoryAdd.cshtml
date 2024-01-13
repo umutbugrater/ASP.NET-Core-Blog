@@ -1,0 +1,23 @@
+﻿@model Category
+
+@{
+    ViewData["Title"] = "CategoryAdd";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Kategori Ekleme</h1>
+
+<form method="post" asp-area="Admin" asp-controller="AdminCategory" asp-action="CategoryAdd">
+    <div class="form-group">
+        <label>Kategori Adı</label>
+        @Html.TextBoxFor(x=>x.CategoryName, new {@class="form-control"})
+        <span asp-validation-for="@Model.CategoryName" style="color:red"></span>
+    </div>
+
+    <div class="text-danger" asp-validation-summary="ModelOnly">
+    </div>
+    <button type="submit" class="btn btn-success btn-lg mb-3"> Ekle </button>
+    <br />
+    <a asp-area="Admin" asp-controller="AdminCategory" asp-action="Index" class="btn btn-primary btn-lg"> Geri Dön </a>
+
+</form>

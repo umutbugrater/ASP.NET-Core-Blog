@@ -1,0 +1,36 @@
+﻿@model List<Blog>
+
+<div id="m-points" class="container tab-pane fade">
+    @{
+        int count = 0;
+    }
+    @for (int i = 0; i < ViewBag.MostScoredOrderByBlogId.Length; i++)
+    {
+        @foreach (var item in Model)
+        {
+            if (ViewBag.MostScoredOrderByBlogId[i] == item.BlogID)
+            {
+                if (count < 5)
+                {
+                    <div class="tn-news">
+                        <div class="tn-img">
+                            <img src="~/BlogImages/@item.BlogImage" style="height:100px;width:150px;" />
+                        </div>
+                        <div class="tn-title" style="width:750px">
+                            <a href="/Blog/BlogReadAll/@item.BlogID">@item.BlogTitle</a>
+
+                        </div>
+                        <div style="padding:10px 15px;">
+                            <h6 style="margin:0 0 0 0"> @ViewBag.Scores[i] puan</h6>
+                        </div>
+                    </div>
+                    count++;
+                }
+               
+            }
+
+        }
+    }
+
+
+</div>

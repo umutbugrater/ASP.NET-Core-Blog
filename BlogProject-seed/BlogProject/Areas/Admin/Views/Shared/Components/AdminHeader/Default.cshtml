@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Message>
+
+<div class="row border-bottom">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary "><i class="fa fa-bars"></i> </a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-envelope"></i>  <span class="label label-warning">@Model.Count()</span>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    @foreach (var item in Model.OrderByDescending(x=>x.MessageDate).Take(3))
+                    {
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a class="dropdown-item float-left" asp-area="Admin" asp-controller="AdminMessage" asp-action="InBoxMessageDetails" asp-route-id="@item.MessageID">
+                                    <img alt="image" class="rounded-circle" src="~/UserImages/@item.SenderUser.ImageUrl">
+                                </a>
+                                <div class="media-body">
+                                    <strong>@item.SenderUser.NameSurname.ToUpper()</strong>'den sana yeni bir mesaj var <strong></strong>. <br>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                    }
+
+                    <li>
+                        <div class="text-center link-block">
+                            <a asp-area="Admin" asp-controller="AdminMessage" asp-action="Inbox" class="dropdown-item">
+                                <i class="fa fa-envelope"></i> <strong>Tüm Mesajları Gör..</strong>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="RegisterORLogin" asp-action="LogOut">
+                    <i class="fa fa-sign-out"></i> Çıkış Yap
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</div>

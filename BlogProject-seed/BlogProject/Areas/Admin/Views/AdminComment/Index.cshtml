@@ -1,0 +1,125 @@
+﻿@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+
+@model IPagedList<Comment>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<link href="~/inspinia-gh-pages/css/pagedd.css" rel="stylesheet" />
+<body>
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5> Yorumlar  </h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li>
+                                    <a href="#" class="dropdown-item">Config option 1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Kullanıcı</th>
+                                    <th>Mesaj Başlık</th>
+                                    <th>Blog Adı    </th>
+                                    <th>Puan</th>
+                                    <th>Tarih</th>
+                                    <th>Detay</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <th>@item.CommentID</th>
+                                        <td>@item.AppUser.NameSurname</td>
+                                        <td>@item.CommentTitle</td>
+                                        <td>@item.Blog.BlogTitle</td>
+                                        @{
+                                            var durum = "";
+                                            if (item.BlogScore >= 1 && item.BlogScore <= 3)
+                                            {
+                                                durum = "text-danger ";
+                                            }
+                                            else if (item.BlogScore >= 4 && item.BlogScore <= 6)
+                                            {
+                                                durum = "text-warning ";
+                                            }
+                                            else if (item.BlogScore >= 7 && item.BlogScore <= 8)
+                                            {
+                                                durum = "text-success";
+                                            }
+                                            else if (item.BlogScore >= 9 && item.BlogScore <= 10)
+                                            {
+                                                durum = "text-navy";
+                                            }
+                                        }
+                                        <td class=@durum>  @item.BlogScore </td>
+                                        <td>@(((DateTime)item.CommentDate).ToString("dd-MMM-yyyy"))</td>
+                                        <td> <a asp-area="Admin" asp-controller="AdminComment" asp-action="CommentDetails" asp-route-id="@item.CommentID" class="btn btn-outline-success">İncele</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @{
+        var durum2 = "";
+        if (Model.Count() < 10)
+        {
+            durum2 = "visibility:hidden";
+        }
+        else
+        {
+            durum2 = "visibility:visible";
+        }
+    }
+    <div class="pagination" style="justify-content:center;@durum2">
+
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }),
+        new PagedListRenderOptions
+        {
+        LinkToPreviousPageFormat = "< Önceki",
+        LinkToNextPageFormat = "Sonraki >",
+        LiElementClasses = new string[] { "page-item"},
+        PageClasses = new string[] {"page-link"}
+        })
+    </div>
+
+</body>
+
+</html>
+
+

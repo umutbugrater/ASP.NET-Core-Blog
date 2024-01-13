@@ -1,0 +1,66 @@
+﻿@model AppUser
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element text-center">
+                    <img alt="image" class="rounded-circle mb-3" style="height:90px;width:90px;" src="~/UserImages/@Model.ImageUrl" />
+                    <div class="dropdown-toggle ">
+                        <span class="block m-t-xs font-bold" style=" color:white">@Model.NameSurname</span>
+                        <span class="text-muted text-xs block "> @Model.JobTitle </span>
+                    </div>
+                </div>
+                <div class="logo-element">
+                    UBT
+                </div>
+            </li>
+            <li>
+                <a href="/Admin/Chart/Index"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Grafikler</span></a>
+            </li>
+            <li>
+                <a asp-area="Admin" asp-controller="AdminCategory" asp-action="Index"><i class="fa fa-group"></i> <span class="nav-label">Kategoriler</span>  </a>
+            </li>
+            <li>
+                <a href="/Admin/AdminBlog/Index"><i class="fa fa-list-alt"></i> <span class="nav-label">Bloglar</span>  </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-envelope"></i> <span class="nav-label">Mesajlar </span>
+                    <span class="float-right">
+                        <span class="label label-primary"> @ViewBag.InBoxCount</span> -
+                        <span class="label label-warning ">@ViewBag.SendBoxCount</span>
+                    </span>
+                </a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="/Admin/AdminMessage/InBox">Gelen Kutusu</a></li>
+                    <li><a href="/Admin/AdminMessage/SendBox">Giden Kutusu</a></li>
+                    <li><a href="/Admin/AdminMessage/SendMessage">Yeni Mesaj Oluştur</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/Admin/AdminComment/Index"><i class="fa fa-comment"></i> <span class="nav-label">Yorumlar</span>  </a>
+            </li>
+            <li>
+                <a href="/Admin/AdminUser/Index"><i class="fa fa-user"></i> <span class="nav-label">Yazarlar</span>  </a>
+            </li>
+
+            <li>
+                <a href="/Admin/AdminRol/Index"><i class="fa fa-lock"></i> <span class="nav-label">Sistem Rolleri</span></a>
+            </li>
+
+            <li>
+                <a href="/Admin/AdminDynamicRapor/Index"><i class="fa fa-flask"></i> <span class="nav-label">Dinamik Rapor</span></a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Blog" asp-action="Index"> <i class="fa fa-chevron-circle-up"></i> <span class="nav-label">Siteye Git</span></a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="RegisterORLogin" asp-action="LogOut"><i class="fa fa-sign-out"></i> <span class="nav-label">Çıkış Yap</span></a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>

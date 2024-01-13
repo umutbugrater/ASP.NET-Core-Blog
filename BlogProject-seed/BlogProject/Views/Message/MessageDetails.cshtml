@@ -1,0 +1,23 @@
+﻿@model Message
+
+@{
+    ViewData["Title"] = "MessageDetails";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Mesaj Detayları</h1>
+
+@Html.Label("Mesaj ID")
+@Html.TextBoxFor(x=>x.MessageID,new {@class="form-control",@readonly=true,@style ="color:white"})
+<br />
+
+@Html.Label("Mesaj Konusu")
+@Html.TextBoxFor(x=>x.MessageSubject,new {@class="form-control",@readonly=true,@style ="color:white"})
+<br />
+
+@Html.Label("Mesaj İçeriği")
+@Html.TextAreaFor(x=>x.MessageDetails,10,3,new {@class="form-control",@readonly=true,@style ="color:white"})
+<br />
+
+<a asp-controller="Message" asp-action="InBox" class="btn btn-success btn-lg" >Gelen Kutusuna Geri Dön</a>
+<a asp-controller="Message" asp-action="SendBox" class="btn btn-primary btn-lg" >Giden Kutusuna Geri Dön</a>

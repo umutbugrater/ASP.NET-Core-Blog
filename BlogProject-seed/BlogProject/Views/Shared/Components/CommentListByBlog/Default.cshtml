@@ -1,0 +1,78 @@
+﻿@model List<Comment>
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+
+<body>
+    @if (Model.Count() == 0)
+    {
+        <div>
+            <div class="container-fluid pb-5">
+                <div class="row">
+                    <div class="col-md-12 col-lg-8 col-sm-12">
+                        <div class="card white-box p-3">
+                            <div class="card-body">
+                                <h3 class="box-title mb-0" style="color:#ff6f61">Yorumlar</h3>
+                            </div>
+                            <div class="comment-widgets">
+                                <div class="d-flex flex-row comment-row p-2 mt-0">
+                                    <div class="comment-text ps-2 ps-md-3 w-100">
+                                        <h5 class="font-medium" style="color:black"> İlk yorum yazmak ister misiniz?</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    }
+    else
+    {
+        <div>
+            <div class="container-fluid pb-5">
+                <div class="row">
+                    <div class="col-md-12 col-lg-8 col-sm-12">
+                        <div class="card white-box p-3">
+                            <div class="card-body">
+                                <h3 class="box-title mb-0" style="color:#ff6f61">Yorumlar</h3>
+                            </div>
+                            <div class="comment-widgets">
+                                <!-- Comment Row -->
+                                @foreach (var item in Model)
+                                {
+                                    <div class="d-flex flex-row comment-row p-2 mt-0">
+                                        <div class="p-1"><img src="~/UserImages/@item.AppUser.ImageUrl" alt="user" width="50" class="rounded-circle"></div>
+                                        <div class="comment-text ps-2 ps-md-3 w-100" style="padding-left:20px;">
+                                            <h5 class="font-medium" style="color:black">@item.AppUser.NameSurname</h5>
+                                            <span class="mb-3 d-block">@item.CommentContent </span>
+                                            <div class="text-muted fs-1 ms-auto mt-1 mt-md-0">
+                                                <div style="float:left;color:#ff6f61;background-color:black;padding:5px;border:3px solid #FF6F61">
+                                                    @item.BlogScore puan
+                                                </div>
+                                                <div style="float:right;color:#ff6f61;background-color:black;padding:5px;border:3px solid #FF6F61">
+                                                    @item.CommentDate.ToString("dd-MMM-yyyy")
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    }
+
+</body>
+
+</html>
+

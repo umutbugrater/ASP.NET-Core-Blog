@@ -1,0 +1,20 @@
+﻿@model Category
+
+@{
+    ViewData["Title"] = "CategoryUpdate";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Kategori Güncelleme</h1>
+
+<form method="post" asp-area="Admin" asp-controller="AdminCategory" asp-action="CategoryUpdate">
+    @Html.HiddenFor(x=>x.CategoryID)
+    <div class="form-group">
+        <label>Kategori Adı</label>
+        @Html.TextBoxFor(x=>x.CategoryName, new {@class = "form-control"})
+        <span asp-validation-for="@Model.CategoryName" style="color:red"></span>
+    </div>
+    <button type="submit" class="btn btn-lg btn-outline-primary">Güncelle</button>
+    <a asp-area="Admin" asp-controller="AdminCategory" asp-action="Index" class="btn btn-primary btn-lg"> Geri Dön </a>
+</form>
+

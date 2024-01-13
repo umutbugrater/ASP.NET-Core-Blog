@@ -1,0 +1,79 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common;
+@model IPagedList<Blog>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+<link href="~/inspinia-gh-pages/css/pagedd.css" rel="stylesheet" />
+@await Component.InvokeAsync("BlogListWithSlider")
+@await Component.InvokeAsync("CategoryAndBlogList")
+<!-- Category News End-->
+<!-- Tab News Start-->
+<div class="tab-news pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="pill" href="#m-comments">En Çok Yorum Yapılanlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#m-points">En Yüksek Puan Alanlar</a>
+                    </li>
+
+                </ul>
+                <div class="tab-content">
+
+                    @await Component.InvokeAsync("MostCommentedTakeBlogList")
+
+                    @await Component.InvokeAsync("MostScoredTakeBlogList")
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Tab News Start-->
+<!-- Main News Start-->
+<div class="main-news">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-md-4">
+                            <div class="mn-img">
+                                <img src="~/BlogImages/@item.BlogImage" style="height:200px;width:300px;" />
+                                <div class="mn-title">
+                                    <a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id="@item.BlogID">@item.BlogTitle.Substring(0,19) ...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                </div>
+                <div class="pagination" style="justify-content:center;">
+
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }),
+                    new PagedListRenderOptions
+                    {
+                    LinkToPreviousPageFormat = "< Önceki",
+                    LinkToNextPageFormat = "Sonraki >",
+                    LiElementClasses = new string[] { "page-item"},
+                    PageClasses = new string[] {"page-link"}
+                    })
+                </div>
+            </div>
+
+            @await Component.InvokeAsync("ReadMore")
+
+        </div>
+    </div>
+</div>
+<!-- Main News End-->

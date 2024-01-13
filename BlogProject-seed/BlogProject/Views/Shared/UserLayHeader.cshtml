@@ -1,0 +1,32 @@
+﻿<div class="nav-bar">
+    <div class="container-fluid" style="padding-left:150px; padding-right:150px;">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a href="#" class="navbar-brand">MENU</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav py-2 mr-auto">
+                    <a asp-controller="Blog" asp-action="Index" class="nav-item nav-link active">Ana Sayfa</a>
+                    <a asp-controller="Contact" asp-action="Index" class="nav-item nav-link active">İletişim</a>
+                </div>
+                <div class="navbar-nav py-2 mr-auto" style="color:white">
+                    <div>
+                        <a asp-controller="RegisterORLogin" asp-action="Index" class="nav-item nav-link" style="margin-left:200px;">SIGN IN  or  Register</a>
+                    </div>
+                    <div>
+                        <a asp-controller="Dashboard" asp-action="Index" class="nav-item nav-link" style="margin-left:200px;">Yazar Arayüzü</a>
+                    </div>
+                </div>
+                <div class="social ml-auto">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/umut-bu%C4%9Fra-ter-600809233/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/umutbugra.ter/"><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
