@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\umutb\\source\\repos\\MCSD\\BEN\\BlogProject-seed\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "C:\\Users\\umutb\\Documents\\GitHub\\ASP.NET-Core-Blog\\BlogProject-seed\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\umutb\\source\\repos\\MCSD\\BEN\\BlogProject-seed\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\umutb\\Documents\\GitHub\\ASP.NET-Core-Blog\\BlogProject-seed\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\umutb\\source\\repos\\MCSD\\BEN\\BlogProject-seed\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\umutb\\Documents\\GitHub\\ASP.NET-Core-Blog\\BlogProject-seed\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\umutb\\source\\repos\\MCSD\\BEN\\BlogProject-seed\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\umutb\\Documents\\GitHub\\ASP.NET-Core-Blog\\BlogProject-seed\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\umutb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\umutb\\source\\repos\\MCSD\\BEN\\BlogProject-seed\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\umutb\\Documents\\GitHub\\ASP.NET-Core-Blog\\BlogProject-seed\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\umutb\\source\\repos\\MCSD\\BEN\\BlogProject-seed\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\umutb\\source\\repos\\MCSD\\BEN\\BlogProject-seed\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\umutb\\Documents\\GitHub\\ASP.NET-Core-Blog\\BlogProject-seed\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\umutb\\Documents\\GitHub\\ASP.NET-Core-Blog\\BlogProject-seed\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -97,14 +97,14 @@
         }
       }
     },
-    "C:\\Users\\umutb\\source\\repos\\MCSD\\BEN\\BlogProject-seed\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\umutb\\Documents\\GitHub\\ASP.NET-Core-Blog\\BlogProject-seed\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\umutb\\source\\repos\\MCSD\\BEN\\BlogProject-seed\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\umutb\\Documents\\GitHub\\ASP.NET-Core-Blog\\BlogProject-seed\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\umutb\\source\\repos\\MCSD\\BEN\\BlogProject-seed\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\umutb\\Documents\\GitHub\\ASP.NET-Core-Blog\\BlogProject-seed\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\umutb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\umutb\\source\\repos\\MCSD\\BEN\\BlogProject-seed\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\umutb\\Documents\\GitHub\\ASP.NET-Core-Blog\\BlogProject-seed\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

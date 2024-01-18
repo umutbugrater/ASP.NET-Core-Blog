@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wd7hC08nZRuqbTX+UvAzWP3nAgBD+piIh0akkwnG+E6fPlKUju6jSRSpC7YEmkC4PBVx7Beih5rkyjk00mrKbQ==",
+  "dgSpecHash": "s3kXT4QGh4hN1oN81jyKvfHZo9iL3Rn+zyb6Lf2zx7XYu2uYHWMB1J0Xd88wsJf9SkV8IRRvq527qrZuCZ2CZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\umutb\\source\\repos\\MCSD\\BEN\\BlogProject-seed\\BlogProject\\BlogProject.csproj",
+  "projectFilePath": "C:\\Users\\umutb\\Documents\\GitHub\\ASP.NET-Core-Blog\\BlogProject-seed\\BlogProject\\BlogProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\umutb\\.nuget\\packages\\closedxml\\0.102.1\\closedxml.0.102.1.nupkg.sha512",
     "C:\\Users\\umutb\\.nuget\\packages\\documentformat.openxml\\2.16.0\\documentformat.openxml.2.16.0.nupkg.sha512",

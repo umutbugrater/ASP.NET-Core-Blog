@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zDDSUACbL4GX5Oykur6vK01DM+ekyog0vbiNUFrwFPAlNsQGfWIdKbYqVCdZaRfQx+Udoava1tg7x2iedCOe2Q==",
+  "dgSpecHash": "S9razt1nMP5iwutpcb1LyulNWEiLNGjvVAEmHh3C++UFar3jGb7XQmpGpNhNqJDHFV36v7S3knu/WgEHbf+RKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\umutb\\source\\repos\\MCSD\\BEN\\BlogProject-seed\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\umutb\\Documents\\GitHub\\ASP.NET-Core-Blog\\BlogProject-seed\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\umutb\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\umutb\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
